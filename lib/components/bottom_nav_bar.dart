@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:food_delivery_app/styles/styles.dart';
+
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
     Key key,
@@ -10,11 +12,7 @@ class BottomNavBar extends StatelessWidget {
     return Container(
       height: 70,
       decoration: BoxDecoration(
-        color: Colors.grey[300],
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20),
-          topRight: Radius.circular(20),
-        ),
+        color: BackgroundColor.secondaryColor,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -22,8 +20,8 @@ class BottomNavBar extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.circular(15),
+              color: ButtonColor.primaryColor,
+              borderRadius: ContainerBorder.secondaryContainer,
             ),
             child: Row(
               children: [
@@ -31,23 +29,23 @@ class BottomNavBar extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Icon(
                     Icons.home,
-                    color: Colors.white,
+                    color: IconColor.secondaryColor,
                   ),
                 ),
                 Text(
                   'Home',
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
+                  style: TextFonts.secondaryText,
                 ),
               ],
             ),
           ),
           Icon(
             Icons.search,
+            color: IconColor.primaryColor,
           ),
           Icon(
             Icons.shopping_bag,
+            color: IconColor.primaryColor,
           ),
         ],
       ),

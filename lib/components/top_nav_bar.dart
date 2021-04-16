@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
-class TopNavBar extends StatelessWidget {
-  const TopNavBar({
-    Key key,
-  }) : super(key: key);
+import 'package:food_delivery_app/styles/styles.dart';
 
-  @override
+
+class TopNavBar{
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -17,15 +15,13 @@ class TopNavBar extends StatelessWidget {
             children: [
               Text(
                 'Deliver to',
+                style: TextFonts.primaryText,
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                 child: Text(
                   'Sesame street',
-                  style: TextStyle(
-                    fontSize: 27,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: HeaderFonts.primaryText,
                 ),
               ),
             ],
@@ -40,7 +36,8 @@ class TopNavBar extends StatelessWidget {
             ),
             image: DecorationImage(
               image: AssetImage('images/newall.png'),
-              fit: BoxFit.fill,
+              fit: BoxFit.cover,
+              alignment: Alignment(-0.7, -0.7),
             ),
           ),
         ),

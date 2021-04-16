@@ -55,6 +55,26 @@ flutter:
     - images/004-pizza.png
     - images/005-meat.png
     - images/006-menu.png
+    - images/beef_burger.jpg
+    - images/cheese_burger.jpg
+    - images/chicken_burger.jpg
+    - images/mutton_burger.jpg
+    - images/burnt_meat.jpg
+    - images/fried_meat.jpg
+    - images/just_meat.jpg
+    - images/uncooked_meat.jpg
+    - images/beef_pizza.jpg
+    - images/cheese_pizza.jpg
+    - images/chicken_pizza.jpg
+    - images/mutton_pizza.jpg
+    - images/burnt_chicken.jpg
+    - images/fried_chicken.jpg
+    - images/just_chicken.jpg
+    - images/uncooked_chicken.jpg
+    - images/beef_sandwich.jpg
+    - images/cheese_sandwich.jpg
+    - images/chicken_sandwich.jpg
+    - images/mutton_sandwich.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

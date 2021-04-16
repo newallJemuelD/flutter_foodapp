@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'components/all_components.dart';
+
+import './components/all_components.dart';
+import './styles/styles.dart';
 
 class FoodApp extends StatefulWidget {
   @override
@@ -12,18 +14,19 @@ class _FoodAppState extends State<FoodApp> {
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
+          backgroundColor: BackgroundColor.primaryColor,
           body: SingleChildScrollView(
             child: Column(
               children: [
-                TopNavBar(),
+                TopNavBar().build(context),
                 SizedBox(
                   height: 30,
                 ),
                 CategoriesAndBestsellers(),
-                BottomNavBar(),
               ],
             ),
           ),
+          bottomNavigationBar: BottomNavBar(),
         ),
       ),
     );
